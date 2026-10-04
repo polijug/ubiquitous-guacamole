@@ -1,0 +1,28 @@
+{
+  "version": "2.6.2",
+  "release_version": "",
+  "released_at": "",
+  "summary": {
+    "title": "Threat model UKB 1",
+    "owner": "Novotný Erik",
+    "description": "Organizace provozuje dvě webové aplikace: KOS a Progtest.\n▪ Obě aplikace jsou dostupné z internetu přes protokol HTTP .\n▪ Studenti přistupují do aplikací přes webový prohlížeč, jako například\nFirefox, Chrome nebo Edge.\n▪ Požadavky pro obě služby jsou přeposílány pomocí reverzního proxy\nserveru Squid. Všechny požadavky mezi aplikacemi a proxy serverem\njsou realizovány pomocí HTTP.\n\nAplikace KOS:\n▪ Aplikace má vlastní aplikační server, který obstarává logiku.\n▪ Data jsou uložena v cloudové PostgreSQL databázi prostřednictvím AWS RDS.\n▪ Z rozpočtových důvodů je komunikace s RDS realizována přes veřejný internetový\nendpoint\nAplikace Progtest:\n▪ Aplikace má vlastní webový aplikační server, který obstarává logiku aplikace.\n▪ Aplikace má vestavěnou SQLite databázi.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
