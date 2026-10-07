@@ -625,7 +625,7 @@
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
-              "isPublicNetwork": false,
+              "isPublicNetwork": true,
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": []
@@ -677,7 +677,7 @@
               "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
-              "isPublicNetwork": false,
+              "isPublicNetwork": true,
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": []
@@ -816,7 +816,7 @@
               "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": []
             }
@@ -1060,7 +1060,7 @@
               "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": []
             }
