@@ -20,33 +20,38 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
+            "position": {
+              "x": 241.9999999999991,
+              "y": 109.00000000000114
+            },
+            "size": {
+              "width": 450,
+              "height": 450
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "aea3e5f4-de52-4b73-8ee5-17336ad30ca1",
             "zIndex": -1,
-            "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Internal <-> Public network",
+              "type": "tm.BoundaryBox",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Internal <-> Public network"
-            ],
-            "id": "86f2ecf2-132e-4605-aa6b-d20786aecef0",
-            "source": {
-              "x": 650,
-              "y": -10
-            },
-            "target": {
-              "x": 710,
-              "y": 580
-            },
-            "vertices": []
+              "crossingFlows": [
+                "a9e70d9f-8643-4ab2-8a85-277f9f088088",
+                "3280dd07-1004-4054-8b1c-72cd0b0b8f46",
+                "ce94eef6-32ba-4d6f-a7e5-7a1051bc8d96",
+                "79db38e0-ee39-44f0-8ede-c6954e522bd2",
+                "579e0c00-76e9-4d27-b28e-0f8bfed24ed1"
+              ],
+              "containedElements": [
+                "e939674f-797a-498c-9362-800dfa276ebb",
+                "a308b95c-af94-4761-9939-71f37e080b86",
+                "10405201-2103-45e0-8264-5a77b5c28d73",
+                "8f7318a7-04d5-4bb9-956a-e330308d719d"
+              ]
+            }
           },
           {
             "position": {
@@ -316,7 +321,9 @@
               "isPublicNetwork": true,
               "protocol": "HTTP",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aea3e5f4-de52-4b73-8ee5-17336ad30ca1"
+              ]
             },
             "labels": [
               "HTTP Request"
@@ -368,7 +375,9 @@
               "isPublicNetwork": true,
               "protocol": "HTTP",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aea3e5f4-de52-4b73-8ee5-17336ad30ca1"
+              ]
             },
             "labels": [
               "HTTP Response"
@@ -420,7 +429,9 @@
               "isPublicNetwork": false,
               "protocol": "HTTP",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aea3e5f4-de52-4b73-8ee5-17336ad30ca1"
+              ]
             },
             "labels": [
               "HTTP Response"
@@ -524,7 +535,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aea3e5f4-de52-4b73-8ee5-17336ad30ca1"
+              ]
             },
             "labels": [
               "SQL query"
@@ -680,7 +693,9 @@
               "isPublicNetwork": true,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "aea3e5f4-de52-4b73-8ee5-17336ad30ca1"
+              ]
             },
             "labels": [
               "Result"
@@ -1294,33 +1309,54 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
+            "angle": 270,
+            "position": {
+              "x": 171.99999999999906,
+              "y": 340
+            },
+            "size": {
+              "width": 110,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "Internet"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "c564ad88-ad44-4d53-be98-72a4ac2de5e5",
             "zIndex": 18,
-            "connector": "smooth",
             "data": {
-              "type": "tm.Boundary",
-              "name": "Internet <-> Internal \n                   network",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "type": "tm.Text",
+              "name": "Internet",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "angle": 90,
+            "position": {
+              "x": 200,
+              "y": 345
             },
-            "labels": [
-              "Internet <-> Internal \n                   network"
-            ],
-            "id": "7b572337-bab8-4db1-a69a-d13eaf495481",
-            "source": {
-              "x": 250,
-              "y": 0
+            "size": {
+              "width": 112.5,
+              "height": 60
             },
-            "target": {
-              "x": 220,
-              "y": 550
+            "attrs": {
+              "text": {
+                "text": "Private network"
+              }
             },
-            "vertices": []
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "e1ac3105-1c62-4c0f-b206-0373907b6125",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Text",
+              "name": "Private network",
+              "hasOpenThreats": false
+            }
           }
         ]
       }
